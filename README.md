@@ -72,11 +72,15 @@ $ createdb database_name
 ### Run migrations and seeders
 
 ```sh
-sequelize db:migrate:all
+yarn migrate
+# it will run
+# sequelize db:migrate:all
 ```
 
 ```sh
-sequelize db:seed:all
+yarn seed
+# it will run
+# sequelize db:seed:all
 ```
 
 ---
