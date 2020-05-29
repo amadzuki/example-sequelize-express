@@ -1,10 +1,13 @@
-const User = require("../../models/user")
+const models = require("../../models")
+const User = models.User
 
 module.exports = {
-  getAll: (req, res, next) => {
+  getAll: async (req, res, next) => {
+    const users = await User.findAll()
+
     res.send({
       message: "Get all users",
-      users: [],
+      users: users,
     })
   },
 
