@@ -1,0 +1,12 @@
+build:
+  languages:
+    - nodejs
+  pre:
+    - yarn migrate
+    - echo 'Database migrated'
+    - yarn seed
+    - echo 'Data seeded'
+  post:
+    - echo 'App is ready'
+run:
+  web: yarn start

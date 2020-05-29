@@ -105,6 +105,19 @@ pm2 start index.js --name example-sequelize-express
 
 ---
 
+## Production
+
+Copy and paste all environment variables.
+
+```sh
+heroku run npm install -g yarn -a app-name
+heroku run yarn -a app-name
+heroku run yarn migrate -a app-name
+heroku run yarn seed -a app-name
+```
+
+---
+
 ## License
 
 MIT
