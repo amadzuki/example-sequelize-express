@@ -74,7 +74,7 @@ $ createdb database_name
 ```sh
 yarn migrate
 # it will run
-# sequelize db:migrate:all
+# sequelize db:migrate
 ```
 
 ```sh
